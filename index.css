@@ -1,0 +1,562 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    background: #EEE1B3;
+    height: 100%;
+    width: 100%;
+}
+.topnav{
+    height: 50px;
+    width: 100%;
+    background-color:#996515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+
+.topnav a:link{
+    color: #e0d9bc;
+}
+.topnav a:visited{
+    color: #e0d9bc;
+}
+.topnav div{
+    color: white;
+    width: 80%;
+    /* height: 50px; */
+}
+.topnav div span{
+    border-right:2px solid #945045;
+}
+ .topnav button{
+    border: none;
+    font-size: 20px;
+    background-color: #8aa0b7; 
+    height: 50px;   
+    color: wheat;
+    cursor: pointer;
+    visibility: hidden;
+ }
+ .topnav2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d0027;
+ }
+ .topnav2 div{
+    width: 90%;
+    display: flex;
+ }
+ .topnav2 div img {
+    width: 100px;
+    height: 100px;
+}
+.topnav2 div ul{
+    width:50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.topnav2 div ul li{
+    display: inline-block;
+    list-style-type: none;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    font-family: tahoma;
+}
+.topnav2Dis{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color:#0d0027;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    animation: fadeIn 1s;
+ }
+.topnav2 a, .topnav2Dis a{
+    color: #1E2F23;
+    font-family: cursive;
+    transition: 500ms;
+}
+.topnav2 a:link:hover, .topnav2Dis a:link:hover{
+    text-decoration: underline;
+    color: #945045;
+}
+.topnav2 a:visited:hover, .topnav2Dis a:visited:hover{
+    text-decoration: underline;
+    color: #945045;
+}
+.topnav2 a:link, .topnav2Dis a:link{
+    text-decoration: none;
+    color: #43a360;
+}
+.topnav2 a:visited, .topnav2Dis a:visited{
+    text-decoration: none;
+    color: #43a360;
+}
+
+ .topnav2Dis div{
+    width: 90%;
+    display: flex;
+ }
+ .topnav2Dis div img{
+    width: 100px;
+    height: 100px;
+}
+.topnav2Dis div ul{
+    width:50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.topnav2Dis div ul li{
+    display: inline-block;
+    list-style-type: none;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    font-family: tahoma;
+}
+/* This is the slider code */
+.home {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide img{
+    height: 600px;
+    width: 100%;
+}
+.focus{
+    background: #996515;
+    padding: 2em;
+    height: 100vh;
+    color: white;
+
+}
+#foucsCont{
+    width: 100%;
+}
+#banner{
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: tahoma;
+    font-size: 40px;
+    font-weight: 700;
+}
+.imgText{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-size: 20px;
+    color: #3cd396;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+#focusContP {
+    display: block;
+    text-align: center;
+    font-family: tahoma;
+    font-size: 34px;
+    font-weight: 500;
+    margin: 20px 0;
+    color: white;
+}
+.bannerFlex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flex1{
+    width: 50%;
+    height: 400px;
+    border: 1px solid black;
+}
+.flex1Det{
+    text-align: justify;
+    color: white;
+
+}
+.flex2{
+    width: 30%;
+    height: 400px;
+    border: 1px solid black;
+}
+#flex1Detimg{
+    width: 100%;
+    height: 400px;
+}
+#flex2Detimg{
+    width: 100%;
+    height: 400px;
+}
+.academics{
+    height: 100%;
+    /* height: 100vh; */
+    background: #253C78;
+    color: gold;
+}
+.academics h2{
+    text-align: center;
+    font-family: tahoma;
+    font-size: 40px;
+    font-weight: 700;
+    padding:70px 0 70px 0;
+}
+.acadInstCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    overflow: hidden;
+}
+.acadInst{
+    border: 2px solid#a15d48;
+    width: 40%;
+    height: auto;
+    transition: 400ms;
+    /* padding: 20px; */
+}
+.acadInst:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: scale(1.02);
+    border: 3px solid #a15d48;
+}
+.acadCont{
+
+    padding: 10px;
+    text-align: center;
+}
+.info{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#headerHead{
+    font-size: 30px;
+}
+#homeDiv{
+    text-align: center;
+}
+.curved-text {
+    font-size: 24px;
+    display: inline-block;
+}
+
+.curved-text span {
+    display: inline-block;
+    transform: rotate(-10deg); /* Adjust the rotation angle as needed */
+    margin-right: 4px; /* Add spacing between letters */
+}
+.acadInstImg{
+
+    height: 100px;
+    width: 200px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.acadCont p{
+    width: 100%;
+    text-align: justify;
+}
+#staffs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:cursive ;
+    font-size: 20px;
+    color: #1E2F23;
+}
+#staffCont{
+    width: 700px;
+}
+#staffCont img{
+    border: 2px solid#a15d48;
+    width: 700px;
+}
+#staffCont p{
+        padding: 30px;
+        text-align: center;
+        color: gold;
+        font-weight: bolder;
+}
+.thePrincipal{
+    height: 400px;
+    background: linear-gradient(#253C78,#0b1c47) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: tahoma;
+}
+.prinCont{
+
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+}
+.prinCont img {
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid wheat;
+    border-radius: 50%;
+    width: 270px;
+}
+.textCont h2{
+    padding: 20px 0;
+    font-size: 30px;
+}
+.textCont p{
+    padding: 0 0 10px 0;
+    text-align: justify;
+}
+.footer {
+    width: 100%;
+    border-top: 1px solid white;
+    background: #0b1c47;
+    color: white;
+}
+.footer a:link{
+    color: #e0d9bc;
+}
+.footer a:visited{
+    color: #e0d9bc;
+}
+.footnote{
+    text-align: center;
+    font-family: tahoma;
+    border-top: 1px solid;
+}
+#footContact{
+    padding: 20px 30px;
+}
+
+#footContact ul li{
+    /* display: inline-block; */
+    list-style-type: none;
+    font-size: 15px;
+    font-family: tahoma;
+}
+
+
+
+/* animations */
+@keyframes fadeIn {
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+/* responsive desgin */
+@media screen and (max-width: 1000px){
+    *{
+        font-family: tahoma !important;
+    }
+    .topnav {
+        height: 30px;
+        font-size: 15px;
+    }
+    .topnav button {
+        border: none;
+        font-size: 15px;
+        background-color: #8aa0b7;
+        height: 30px;
+    }
+    .imgText{
+        font-size: 15px;
+    }
+    .topnav2 div ul li {
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topnav2 div {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    .topnav2Dis div img {
+        height: 40px;
+        width: 300px;
+    }
+    .topnav2Dis div ul li {
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topnav2Dis div {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    .acadInst {
+        width: 80%;
+        height: auto;
+        transition: 400ms;
+        padding: none;
+    }
+    .thePrincipal {
+        height: 100%;
+        padding: 40px 0;
+    }
+    .prinCont {
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #footContact {
+    /* padding: 10px 15px; */
+    display: none;
+    }
+    #footContact h1 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:800px) {
+    .topnav div {
+        color: white;
+        font-size: 11px;
+    }
+    .topnav2 div {
+        width: 100%;
+    }
+    #topnav2imgc{
+        width: 90%;
+    }
+    .topnav2 div img {
+        height: 40px;
+        width: 150px;
+    }
+    .topnav {
+        height: 30px;
+        font-size: 12px;
+    }
+    .topnav2 div ul {
+        width: 58%;
+        gap: 0;
+    }
+    .topnav2 div ul li {
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+    }
+
+    .topnav2Dis div {
+        width: 99%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topnav2Dis div img {
+        height: 40px;
+        width: 150px;
+    }
+    .topnav {
+        height: 30px;
+        font-size: 10px;
+    }
+    .topnav2Dis div ul {
+        width: 58%;
+        gap: 0;
+    }
+    .topnav2Dis div ul li {
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+
+    }
+    #banner {
+        font-size: 30px;
+    }
+    #focusContP {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .focus {
+        padding: 4em 10px;
+        height: 100%;
+    }   
+        .bannerFlex {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: normal;
+            flex-direction: column;
+        } 
+        .flex1 {
+            width: 100%;
+            height: auto;
+            border: none;
+            padding: 20px 0;
+        }
+        .flex2 {
+            width: 100%;
+            height: 400px;
+            border: 1px solid black;
+        }
+        .flex2 h2 {
+            text-align: center;
+        }
+        #staffCont img {
+            border: 2px solid#a15d48;
+            width: 100%;
+        }
+        .prinCont img {
+            height: 250px;
+            object-fit: cover;
+            width: 270px;
+            border-radius: 50%;
+            border: 4px solid wheat;
+        }
+        .academics h2 {
+            font-size: 25px;
+        }
+        .info {
+            gap: 20px;
+            padding: 2em 0;
+            flex-direction: column;
+        }
+        .acadInstImg {
+            height: 150px;
+            width: 200px;
+        }
+        .textCont p {
+            padding: 0 0 10px 0;
+            font-size: 15px;
+            text-align: justify;
+        }
+        .slide img{
+            height: 300px;
+            width: 100%;
+        }
+    }
+    /* CSS HEX
+ */
