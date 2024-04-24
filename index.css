@@ -363,13 +363,31 @@ body{
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
+    width: 60%;
+    display: flex;
+    justify-content: center;
   }
   .owl-carousel .owl-item img {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 70px !important;
+    height: 70px !important;
     background: black;
     border-radius: 50%;
+}
+#border{
+    font-size: 30px;
+    color: #0d0027;
+    font-weight: 800;
+}
+.title h4{
+    color: #ffc107;
+}
+.m-auto {
+    display: flex;
+    margin: auto !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 #noBorder{
     border-radius: auto !important;
@@ -386,7 +404,7 @@ body{
     height: 7px;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    margin: 0 20px;
+    margin: 0 10px;
     transition: 0.3s all ease-in-out;
   }
   .test .owl-carousel .owl-dot.active span {
