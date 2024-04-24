@@ -18,7 +18,7 @@ body{
     align-items: center;
     position: relative;
     top: 0;
-    height: 110px;
+    /* height: 110px; */
 }
 
 .topnav a:link{
@@ -56,9 +56,9 @@ body{
     display: flex;
  }
  .topnav2 div img {
-    width: 100px;
-    height: 100px;
-}
+        width: 130px;
+        height: 100px;
+    }
 .topnav2 div ul{
     width:50% ;
     display: flex;
@@ -84,6 +84,7 @@ body{
     z-index: 9999;
     width: 100%;
     animation: fadeIn 1s;
+    height: 110px;
 
  }
  .overlay{
@@ -112,6 +113,7 @@ body{
     color: white;
     font-size: 19px;
     font-weight: 800;
+    text-align: center;
 }
 #okeOver {
     width: 600px !important;
@@ -688,6 +690,7 @@ body{
     }
     .imgText{
         font-size: 15px;
+        justify-content: unset !important;
     }
     .topnav2 div ul li {
         font-size: 15px;
@@ -702,8 +705,8 @@ body{
         align-items: center;
     }
     .topnav2Dis div img {
-        height: 40px;
-        width: 300px;
+        height: 80px;
+        width: 100px;
     }
     .topnav2Dis div ul li {
         font-size: 15px;
@@ -800,6 +803,10 @@ body{
         width: 60px;
 
     }
+    .imgText{
+        font-size: 15px;
+        justify-content: unset !important;
+    }
     #banner {
         font-size: 30px;
     }
@@ -895,6 +902,47 @@ body{
             color: white;
             font-family: sans-serif;
             font-style: italic;
+        }
+        .spicysCard div {
+            width: 80%;
+            font-size: 17px;
+            text-align: center;
+            color: white;
+            padding-top: 5px;
+            font-weight: 700;
+        }
+        #firstSpiceCont {
+            height: 280px;
+            width: 280px;
+        }
+        #firstSpice {
+            height: 260px;
+            width: 260px;
+            background: linear-gradient(to bottom, #000000, #440f11, #8a1c1f, #e73432);
+        }
+        #secondSpiceCont {
+            height: 280px;
+            width: 280px;
+        }
+        #secondSpice {
+            height: 260px;
+            width: 260px;
+            background: linear-gradient(to bottom, #010065, #002987, #007bc8, #02b9ff);
+        }
+        #thirdSpiceCont {
+            height: 150px;
+            width: 280px;
+        }
+        #thirdSpice {
+            height: 130px;
+            width: 260px;
+        }
+        .spicysCard p{
+            width: 220px;
+            text-align: center;
+            background: yellow;
+            height: 32px;
+            font-size: 22px;
         }
     }
     /* CSS HEX
