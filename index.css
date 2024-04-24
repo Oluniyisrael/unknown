@@ -165,23 +165,18 @@ body{
     justify-content: center;
 }
 .spicysCardCont {
-    height: 320px;
-    width: 320px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #ff0000, #b60000, #520101, #000000); 
+
 }
 .spicysCard {
-    height: 300px;
-    width: 300px;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
     border-radius: 50%;
-    background: linear-gradient(to bottom, #000000, #520101, #b60000, #ff0000);
 }
 .spicysCard p {
     width: 220px;
@@ -199,6 +194,16 @@ body{
     text-align: center;
     color: white;
     font-weight: 700;
+}
+#firstSpice{
+    background: linear-gradient(to bottom, #000000, #520101, #b60000, #ff0000);
+    height: 300px;
+    width: 300px;
+}
+#firstSpiceCont{
+    height: 320px;
+    width: 320px;
+    background: linear-gradient(to bottom, #ff0000, #b60000, #520101, #000000); 
 }
 .imgText{
     width: 90%;
