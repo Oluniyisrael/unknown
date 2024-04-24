@@ -105,6 +105,20 @@ body{
     display: block !important;
     font-size: 30px;
 }
+#nameOver{
+    color: white;
+    font-size: 19px;
+    font-weight: 800;
+}
+#okeOver {
+    width: 600px !important;
+    background: gold;
+    padding: 5px;
+    text-align: center;
+    display: block;
+    border-radius: 20px;
+    font-weight: 800;
+}
 .topnav2 a, .topnav2Dis a{
     color: #1E2F23;
     font-family: cursive;
