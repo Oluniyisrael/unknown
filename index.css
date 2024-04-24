@@ -159,6 +159,39 @@ body{
     font-size: 40px;
     font-weight: 700;
 }
+.spicys{
+    display: flex;
+    min-height: 80vh;
+    justify-content: center;
+}
+.spicysCardCont {
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #ff0000, #b60000, #520101, #000000); 
+}
+.spicysCard{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #000000, #520101, #b60000, #ff0000);
+}
+.spicysCard p {
+    width: 220px;
+    text-align: center;
+    background: yellow;
+    height: 40px;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: sans-serif, Arial !important;
+    border-radius: 20px;
+}
 .imgText{
     width: 90%;
     display: flex;
