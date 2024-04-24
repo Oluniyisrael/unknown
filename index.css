@@ -133,6 +133,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("./images/2a22f2ac-ac15-40af-aa59-a9b66b2f6bcf (1).jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .slide img{
     height: 600px;
@@ -392,8 +395,8 @@ body{
     .topnav2 div {
         width: 90%;
         display: flex;
-        justify-content: center;
-        align-items: center
+        justify-content: flex-start;
+        align-items: center;
     }
     .topnav2Dis div img {
         height: 40px;
@@ -449,8 +452,8 @@ body{
         width: 90%;
     }
     .topnav2 div img {
-        height: 40px;
-        width: 150px;
+        height: 80px;
+        width: 100px;
     }
     .topnav {
         height: 30px;
@@ -475,8 +478,8 @@ body{
         align-items: center;
     }
     .topnav2Dis div img {
-        height: 40px;
-        width: 150px;
+        height: 80px;
+        width: 100px;
     }
     .topnav {
         height: 30px;
