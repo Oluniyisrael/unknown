@@ -173,12 +173,13 @@ body{
     align-items: center;
     background: linear-gradient(to bottom, #ff0000, #b60000, #520101, #000000); 
 }
-.spicysCard{
+.spicysCard {
     height: 300px;
     width: 300px;
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     border-radius: 50%;
     background: linear-gradient(to bottom, #000000, #520101, #b60000, #ff0000);
 }
@@ -191,6 +192,13 @@ body{
     font-weight: 900;
     font-family: sans-serif, Arial !important;
     border-radius: 20px;
+}
+.spicysCard div {
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
 }
 .imgText{
     width: 90%;
