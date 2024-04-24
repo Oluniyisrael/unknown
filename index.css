@@ -172,6 +172,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* margin-top:-10px ; */
 
 }
 .spicysCard {
@@ -213,6 +214,7 @@ body{
     background: white;
     height: 320px;
     width: 320px;
+    margin-top: -35px;
 }
 #secondSpice{
     height: 300px;
@@ -228,6 +230,7 @@ body{
     background: linear-gradient(to bottom, #e73432, #8a1c1f, #440f11, #000000); 
     height: 170px;
     width: 320px;
+    margin-top: -45px;
 }
 #thirdSpice{
     height: 150px;
