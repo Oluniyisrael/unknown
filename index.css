@@ -389,10 +389,10 @@ body{
     justify-content: center !important;
     align-items: center !important;
 }
-#noBorder{
+#noBorder {
     border-radius: auto !important;
-    width: 90% !important;
-    height: 350px !important;
+    width: 110% !important;
+    height: 284px !important;
     border-radius: 0;
     padding: 20px;
     background: none !important;
@@ -628,7 +628,7 @@ body{
         font-size: 12px;
     }
     .topnav2 div ul {
-        width: 58%;
+        width: 48%;
         gap: 0;
     }
     .topnav2 div ul li {
