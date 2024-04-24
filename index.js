@@ -19,6 +19,15 @@ overlayDiv.addEventListener("mouseenter",()=>{
 overlayDiv.addEventListener("mouseleave",()=>{
   fadeInAndStrong(overlay)
 })
+overlayDiv.addEventListener("click", () => {
+  if (overlay.style.opacity === "1") {
+    fadeOutAndWeak(overlay);
+  } 
+  else if (overlay.style.opacity === "0") {
+    fadeInAndStrong(overlay);
+  }
+});
+
 
 function fadeOutAndWeak(element) {
   var opacity = 1;
