@@ -249,6 +249,7 @@ body{
 #firstSpiceCont{
     height: 320px;
     width: 320px;
+    margin-top: 30px;
     background: linear-gradient(to bottom, #e73432, #8a1c1f, #440f11, #000000); 
 }
 #secondSpiceCont{
@@ -858,6 +859,38 @@ body{
         .slide img{
             height: 300px;
             width: 100%;
+        }
+        .overlay{
+            flex-direction: column;
+            align-items: unset;
+        }
+        #nameOver {
+            color: white;
+            font-size: 14px;
+            font-weight: 800;
+        }
+        #welcOver {
+            font-size: 20px;
+            font-family: 'Luxurious Script', cursive !important;
+            width: 100%;
+            /* text-align: center; */
+            height: 30px;
+            display: flex !important;
+            color: gold;
+            justify-content: center;
+            font-size: 30px;
+        }
+        #okeOver {
+            width: 70% !important;
+            background: #ff6300;
+            padding: 5px;
+            text-align: center;
+            display: block;
+            border-radius: 20px;
+            font-weight: 900;
+            color: white;
+            font-family: sans-serif;
+            font-style: italic;
         }
     }
     /* CSS HEX
