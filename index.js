@@ -44,7 +44,7 @@ function fadeOutAndWeak(element) {
 }
 function fadeInAndStrong(element) {
   var opacity = 0;
-  element.style.zIndex = "9999"; 
+  // element.style.zIndex = "9999"; 
   var fadeInInterval = setInterval(function () {
     if (opacity < 1) {
       opacity += 0.2;
@@ -52,9 +52,30 @@ function fadeInAndStrong(element) {
     } else {
       clearInterval(fadeInInterval);
       element.style.opacity = 1
-      element.style.zIndex = "9999"
+      // element.style.zIndex = "9999"
       // Optionally, you might want to reset the zIndex if it was changed in fadeOutAndWeak
 
     }
   }, 50);
 }
+document.getElementById("seeMore").onclick = async () => {
+  var opacity = 1;
+  var fadeInInterval = setInterval(function () {
+    if (opacity > 0) {
+      opacity -= 0.2;
+      document.getElementById("headerHead").style.opacity = opacity;
+    } else {
+      clearInterval(fadeInInterval);
+      document.getElementById("headerHead").style.opacity = 1; // Ensure opacity is set to 1 at the end
+      // Wait for a short delay before setting display to none
+      // setTimeout(() => {
+        document.getElementById("headerHead").style.display = "none";
+        document.getElementsByClassName("shifterCont")[0].style.animation = "grow 2s"
+        document.getElementsByClassName("shifterCont")[0].style.height = "70vh"
+      // }, 0); 
+      setTimeout(() => {
+
+      }, 600);
+    }
+  }, 100); // Decreased interval duration to 100 milliseconds for smoother animation
+};
