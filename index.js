@@ -44,7 +44,7 @@ function fadeOutAndWeak(element) {
 }
 function fadeInAndStrong(element) {
   var opacity = 0;
-  // element.style.zIndex = "9999"; 
+  element.style.zIndex = "9999"; 
   var fadeInInterval = setInterval(function () {
     if (opacity < 1) {
       opacity += 0.2;
@@ -52,7 +52,7 @@ function fadeInAndStrong(element) {
     } else {
       clearInterval(fadeInInterval);
       element.style.opacity = 1
-      // element.style.zIndex = "9999"
+      element.style.zIndex = "9999"
       // Optionally, you might want to reset the zIndex if it was changed in fadeOutAndWeak
 
     }
