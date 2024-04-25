@@ -575,22 +575,23 @@ body{
     justify-content: center;
     align-items: center;
     color: white;
+
 }
 #seeMore{
     color: white;
     cursor: pointer;
-}
-#seeMore :hover{
     text-decoration: underline;
 }
+/* #seeMore :hover{
+} */
 #revert{
     color: white;
     cursor: pointer;
     display: none;
-}
-#revert :hover{
     text-decoration: underline;
 }
+/* #revert :hover{
+} */
 .positionDiv {
     width: 100px;
     border: 20px;
