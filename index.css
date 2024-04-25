@@ -46,6 +46,11 @@ body{
  }
  #headerBody{
     display: none;
+    opacity: 0;
+    margin-top: auto;
+    height: 95%;
+    overflow: hidden;
+    overflow-y: scroll;
  }
  .topnav2{
     display: flex;
@@ -572,18 +577,57 @@ body{
     color: white;
 }
 #seeMore{
-    color: red;
+    color: white;
     cursor: pointer;
-}.shifterCont{
+}
+#seeMore :hover{
+    text-decoration: underline;
+}
+#revert{
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+#revert :hover{
+    text-decoration: underline;
+}
+.positionDiv {
+    width: 100px;
+    border: 20px;
+    height: 25px;
+    align-self: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 120px;
+    bottom: 3px;
+    transition: 1000ms;
+    /* left: 50%; */
+    right: 50% ;
+    transform: translateX(50%);
+}
+/* .positionDiv {
+    width: 100px;
+    background-color: red;
+    border: 20px;
+    height: 25px;
+    align-self: center;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 3px;
+    animation: growToTop 1s;
+} */
+.shifterCont {
     background: linear-gradient(to bottom, #0d00277b, #00288774, rgba(0, 0, 0, 0.501));
     padding: 10px;
-    border-radius:10px ;
+    border-radius: 10px;
     /* min-width: 90%; */
     width: 90vw;
-    min-height: 135px;
+    min-height: 160px;
     animation: fadeIn 2s;
     transition: 400ms;
-
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 .curved-text {
     font-size: 24px;
@@ -699,10 +743,18 @@ body{
     100%{opacity: 100%;}
 }
 @keyframes grow {
-   0%{height: 135px;}
+   0%{height: 160px;}
     100%{height: 70vh;}
 }
-
+@keyframes shrink {
+    0%{height: 70vh;}
+     100%{height: 160px;}
+ }
+@keyframes growToTop {
+    0%{bottom: 5px;}
+    1%{bottom: unset;}
+    100%{top: 15px;}
+}
 /* responsive desgin */
 @media screen and (max-width: 1000px){
     *{
