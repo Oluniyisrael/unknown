@@ -196,7 +196,7 @@ body{
     width: 100%;
 }
 .focus{
-    background: #996515;
+    background: #ff6300;
     padding: 2em;
     height: 100vh;
     color: white;
@@ -859,7 +859,13 @@ body{
         align-items: center;
         width: 60px;
     }
-
+    /* .topnav2Dis div {
+        width: 99%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+    } */
     .topnav2Dis div {
         width: 99%;
         display: flex;
